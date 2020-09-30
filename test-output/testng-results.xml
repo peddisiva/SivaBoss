@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39928" started-at="2020-09-28T09:25:14 IST" finished-at="2020-09-28T09:25:54 IST">
+  <suite name="Default suite" duration-ms="2100" started-at="2020-09-30T21:42:21 IST" finished-at="2020-09-30T21:42:23 IST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNG_Runner@2781e022]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="39928" started-at="2020-09-28T09:25:14 IST" finished-at="2020-09-28T09:25:54 IST">
+    <test name="Default test" duration-ms="2100" started-at="2020-09-30T21:42:21 IST" finished-at="2020-09-30T21:42:23 IST">
       <class name="runner.TestNG_Runner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestNG_Runner@2781e022]" name="setUpClass" is-config="true" duration-ms="368" started-at="2020-09-28T09:25:14 IST" finished-at="2020-09-28T09:25:14 IST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestNG_Runner@2781e022]" name="setUpClass" is-config="true" duration-ms="1210" started-at="2020-09-30T21:42:21 IST" finished-at="2020-09-30T21:42:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNG_Runner@2781e022]" name="runScenario" duration-ms="39358" started-at="2020-09-28T09:25:14 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-28T09:25:53 IST">
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestNG_Runner@2781e022]" name="runScenario" duration-ms="615" started-at="2020-09-30T21:42:23 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-09-30T21:42:23 IST">
           <params>
             <param index="0">
               <value>
@@ -27,10 +27,28 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable does not exist: C:\Users\prane\Downloads\chromedriver_win32\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\prane\Downloads\chromedriver_win32\chromedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at elearning.ElearningSteps.startUp(ElearningSteps.java:34)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestNG_Runner@2781e022]" name="tearDownClass" is-config="true" duration-ms="161" started-at="2020-09-28T09:25:53 IST" finished-at="2020-09-28T09:25:54 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestNG_Runner@2781e022]" name="tearDownClass" is-config="true" duration-ms="228" started-at="2020-09-30T21:42:23 IST" finished-at="2020-09-30T21:42:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

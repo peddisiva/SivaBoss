@@ -30,7 +30,7 @@ public class ElearningSteps {
 	@Before
 	public void startUp() {
 		
-		System.setProperty("webdriver.chrome.driver", "C://Users//prane//Downloads//chromedriver_win32//chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "E:\\\\developing\\\\java\\\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		

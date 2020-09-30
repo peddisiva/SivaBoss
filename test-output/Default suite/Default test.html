@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 28 09:25:14 IST 2020</td>
+<td>Started on:</td><td>Wed Sep 30 21:42:21 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>39 seconds (39928 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2100 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,8 +76,29 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='runner.TestNG_Runner.runScenario()'><b>runScenario</b><br>Test class: runner.TestNG_Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To validate registration and send message functionalities", "Optional[To validate registration and signin functionalities of elearning page]"</td>
-<td></td>
-<td>39</td>
+<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\prane\Downloads\chromedriver_win32\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at elearning.ElearningSteps.startUp(ElearningSteps.java:34)
+</pre></div><a href='#' onClick='toggleBox("stack-trace820537534", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace820537534'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\prane\Downloads\chromedriver_win32\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at elearning.ElearningSteps.startUp(ElearningSteps.java:34)
+</pre></div></td>
+<td>0</td>
 <td>runner.TestNG_Runner@2781e022</td></tr>
 </table><p>
 </body>
